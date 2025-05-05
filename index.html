@@ -1,31 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Maison View</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>V-Tour Project</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="navbar">
-    <h1>Maison View</h1>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    </div>
+  <header class="site-header">
+    <h1>V-Tour Project</h1>
+    <p>Immersive Visual Experiences for Property Marketing</p>
   </header>
 
-  <main>
-    <div class="tour-container">
-      <h2>360&deg; Virtual Tour</h2>
-      <!-- Replace the src link below with your actual Kuula 360 tour embed link -->
-      <iframe width="100%" height="640" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/717qx?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"></iframe>
+  <main class="container">
+    <section class="card">
+      <h2>Explore Our 360° Virtual Tour</h2>
+      <div class="iframe-container">
+        <iframe src="https://kuula.co/share/your-kuula-tour-link" title="V-Tour Demo" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p class="caption">Experience the future of property viewing — virtually walk through spaces before setting foot on site.</p>
     </section>
-  </main>
 
+    <section class="card grid">
+      <div class="content">
+        <h3>Why Choose V-Tour?</h3>
+        <ul>
+          <li>Engage clients with immersive, realistic previews.</li>
+          <li>Save time with remote viewings.</li>
+          <li>Boost sales through visual storytelling.</li>
+        </ul>
+      </div>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="Modern interior" />
+      </div>
+    </section>
+
+    <div class="cta">
+      <button onclick="alert('Contact form coming soon!')">Contact Us to Build Your Tour</button>
+    </div>
+  </main>
 </body>
 </html>
